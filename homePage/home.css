@@ -1,0 +1,109 @@
+@import url('https://fonts.cdnfonts.com/css/gotham-6');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    font-family: 'Gotham', sans-serif;
+    overflow-x: hidden;
+}
+
+:root{
+    --primaryColor: #FF9F1C;
+    --secondaryColor: #f2ebd8;
+    --sideBarColor: #72788D;
+    --white: #FDFFFC;
+    --black: #000000;
+    --link: #72788D;
+    --linkHover: #959ab2;
+}
+
+body{
+    background-image: linear-gradient(to bottom, #1e2229, #25272d, #2c2d31, #333335, #393939);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+a{
+    padding: 5px;
+    text-decoration: none;
+    color: var(--primaryColor);
+    vertical-align: middle;
+    width: 100%;
+}
+
+.side-bar{
+    background: rgba(0, 0, 0, 0.2);
+    width: 70px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: self-start;
+    transition: 0.5s ease;
+    vertical-align: middle;
+}
+
+.side-bar.opened{
+    width: 260px;
+}
+
+.side-bar-menu{
+    width: 50px;
+    margin: 10px 10px 40px 10px;
+}
+
+
+.side-bar-menu img{
+    width: 100%;
+    cursor: pointer;
+}
+
+
+.side-bar-links, .side-bar-links-end{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
+    width: 100%;
+}
+
+.side-bar-links img, .side-bar-links-end img{
+    width: 35px;
+    transition: 0.5s ease;
+}
+
+.side-bar-links-end {
+   margin-top: 200px;
+}
+
+.link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    margin: 10px;
+    flex-direction: row;
+    
+}
+
+.link .icon {
+    overflow-y: hidden;
+    width: 70px;
+}
+
+.link .text{
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+#imgNotCentering{
+    margin-left: 6px;
+}
+
+.link .icon a img:hover{
+    width: 40px;
+    
+}
